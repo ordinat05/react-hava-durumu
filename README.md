@@ -1,3 +1,16 @@
+### Ekran görüntüleri 1 --> API den axios bağlantı arama, listeleme
+![alt resim1](https://raw.githubusercontent.com/ordinat05/react-hava-durumu/master/src/AppScreenShot/KonumaG%C3%B6reHavaDurumuSorgusu.PNG)
+
+### Ekran görüntüleri 2 --> Cihazda Konum Erişimi İsteği1
+![alt resim2](https://raw.githubusercontent.com/ordinat05/react-hava-durumu/master/src/AppScreenShot/CihazdanKonumIstegi.PNG)
+
+
+### Ekran görüntüleri 3 --> Cihazda Konum Erişimi İsteği2
+![alt resim3](https://raw.githubusercontent.com/ordinat05/react-hava-durumu/master/src/AppScreenShot/CihazdanKonumIstegi2.PNG)
+
+### TrickNotes 1
+![alt resim4](https://raw.githubusercontent.com/ordinat05/react-hava-durumu/master/src/AppScreenShot/tricksNotes.PNG)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
