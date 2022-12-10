@@ -4,8 +4,8 @@ import { usePosition } from "use-position";
 import axios from "axios";
 
 function App() {
-  const [weather, setWeather] = useState();
   const { latitude, longitude } = usePosition();
+  const [weather, setWeather] = useState();
   // console.log(latitude);
   // console.log(longitude);
   // console.log(weather);
@@ -31,7 +31,6 @@ function App() {
   };
   useEffect(() => {
     latitude && longitude && getWeatherData(latitude, longitude);
-    // eslint-disable-next-line
     // console.log(
     //   "Burada useEffect 1 : ",
     //   latitude,
@@ -39,20 +38,19 @@ function App() {
     //   longitude
     // );
   }, [latitude, longitude]);
-  // 🔑🔑🔑 Benim Problem Burada. [latitude, longitude] değişikliği takip edilirken, elde edilen lat ve lon değerleri, getWeatherData içine gönderilememiş oluyor.
   return (
     <div className="App">
       <h2>Hava Durumu</h2>
       <h3>Enlem Koordinat : {latitude}</h3>
       <h3>Boylam Koordinat : {longitude}</h3>
-      <h3>Koordinat Bölgesi : {weather.name}</h3>
-      <h3>
+      {/* <h3>Koordinat Bölgesi : {weather.name}</h3> */}
+      {/* <h3>
         Hava Sıcaklığı : {Math.ceil(weather.main.temp - 273.15)}
         <span>&deg;C</span>{" "}
       </h3>
       <h3>Durumu : {weather.weather.map((data) => data.main)} </h3>
       <h3>Özelliği : {weather.weather.map((data) => data.description)}</h3>
-      <h3>parseFloat(parseFloat("1.7777777").toFixed(2))</h3>
+      <h3>parseFloat(parseFloat("1.7777777").toFixed(2))</h3> */}
     </div>
   );
 }
